@@ -44,7 +44,7 @@ public class LoanEvaluator {
     }
 
     public Loan prolong(Loan loan, ProlongRequest request) {
-        loan.setPeriod(loan.getPeriod().plusDays(request.getProlongDays()).normalized());
+        loan.setPeriod(loan.getPeriod().plusDays(request.getProlongDays()));
         return loan;
     }
 
